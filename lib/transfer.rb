@@ -14,9 +14,9 @@ class Transfer
     receiver.valid? && sender.valid?
   end
   
-  def execute_transaction(sender , receiver, amount)
-    sender.depoist(-amount)
-    receiver.deposit(amount)
+  def execute_transaction
+    @sender.depoist(-@amount)
+    @receiver.deposit(@amount)
     
   end
   
