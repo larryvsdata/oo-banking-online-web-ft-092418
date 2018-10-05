@@ -35,6 +35,11 @@ class Transfer
   end
   
  def reverse_transfer
+   @status = "pending"
+   temp =@sender
+   @sender= @receiver
+   @receiver=temp
+   self.execute_transaction
    
  end
   
