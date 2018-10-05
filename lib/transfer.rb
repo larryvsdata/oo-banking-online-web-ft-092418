@@ -40,7 +40,7 @@ class Transfer
    @sender= @receiver
    @receiver=temp
    self.execute_transaction
-   
+   @status = "reversed"
  end
   
   
